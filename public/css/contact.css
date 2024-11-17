@@ -1,0 +1,172 @@
+/* General body styling */
+body {
+    background-color: #f3f4f6; /* Light gray background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for page content */
+.container {
+    max-width: 800px; /* Centered and responsive */
+    margin: 20px auto; /* Center on the page */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Page header */
+.container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+/* Link for adding a new contact */
+.container a {
+    color: #2563eb; /* Blue text */
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #1d4ed8; /* Darker blue on hover */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove gaps between cells */
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header */
+thead {
+    background-color: #e5e7eb; /* Light gray */
+    color: #333333;
+    text-align: left;
+}
+
+thead th {
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d1d5db; /* Subtle border */
+}
+
+/* Table body rows */
+tbody tr {
+    border-bottom: 1px solid #e5e7eb; /* Light border between rows */
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #f9fafb; /* Light hover effect */
+}
+
+/* Table cells */
+tbody td {
+    padding: 12px;
+    font-size: 14px;
+    color: #4b5563; /* Medium gray */
+}
+
+/* Actions (Edit/Delete links) */
+tbody td a {
+    color: #2563eb; /* Blue for actions */
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+tbody td a:hover {
+    color: #1d4ed8; /* Darker blue on hover */
+}
+
+tbody td a.text-red-600 {
+    color: #dc2626; /* Red for delete link */
+}
+
+tbody td a.text-red-600:hover {
+    color: #b91c1c; /* Darker red on hover */
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #1d4ed8;
+}

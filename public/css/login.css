@@ -1,0 +1,105 @@
+/* Apply box-sizing globally to fix input field sizing issues */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-color: #f3f4f6; /* Light gray background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the form */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header styles */
+.container h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333; /* Dark text color */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #4a4a4a; /* Medium gray for labels */
+    margin-bottom: 5px;
+}
+
+/* Input fields with proper sizing */
+.form-group input {
+    width: 100%; /* Ensure input fields never overflow */
+    padding: 10px 15px;
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and border are included in the total width */
+}
+
+/* Input focus styles */
+.form-group input:focus {
+    border-color: #2563eb; /* Blue border on focus */
+    box-shadow: 0 0 3px rgba(37, 99, 235, 0.5); /* Blue shadow on focus */
+}
+
+/* Button styles */
+.button {
+    width: 100%; /* Full width button */
+    padding: 10px 15px;
+    background-color: #2563eb; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1d4ed8; /* Darker blue on hover */
+}
+
+/* Footer text styles */
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.footer a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #1d4ed8;
+}
