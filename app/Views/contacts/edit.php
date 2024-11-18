@@ -20,10 +20,6 @@
                 <label for="phone">Phone</label>
                 <input type="text" id="phone" name="phone" value="<?= esc($contact['phone']) ?>" required>
             </div>
-            <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address" value="<?= esc($contact['address']) ?>" required>
-            </div>
             <button type="submit" class="button">Update Contact</button>
         </form>
         <p class="footer">
